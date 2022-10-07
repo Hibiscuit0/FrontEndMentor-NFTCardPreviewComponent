@@ -27,7 +27,7 @@ body {
 }
 
 main {
-    width: 100vw;
+    /* width: 100vw; */
     max-width: 370px;
     background-color: hsl(216, 50%, 16%);
     margin: 10px;
@@ -46,7 +46,7 @@ main article .imgArticle {
 }
 
 main article .viewHover {
-    background-color: hsl(178, 100%, 50%);
+    background-color: hsl(178, 100%, 50%, 0.5);
     position: absolute;
     top: 0;
     left: 0;
@@ -56,9 +56,9 @@ main article .viewHover {
 }
 
 main article .viewHover:hover {
-    opacity: 0.6;
     cursor: pointer;
     transition: ease-in 300ms;
+    opacity: 1;
 }
 
 main section h1 {
