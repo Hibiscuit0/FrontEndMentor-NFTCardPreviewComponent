@@ -28,8 +28,7 @@ body {
 
 main {
     width: 100vw;
-    max-width: 350px;
-    /* min-width: 300px; */
+    max-width: 370px;
     background-color: hsl(216, 50%, 16%);
     margin: 10px;
     padding: 25px;
@@ -43,8 +42,7 @@ main article {
 
 main article .imgArticle {
     width: 100%;
-    border-radius: 5px;
-    /* opacity: 1; */
+    border-radius: 10px;
 }
 
 main article .viewHover {
@@ -60,56 +58,80 @@ main article .viewHover {
 main article .viewHover:hover {
     opacity: 0.6;
     cursor: pointer;
+    transition: ease-in 300ms;
 }
 
-main h1 {
+main section h1 {
     color: white;
+    font-weight: 700;
+    font-size: 22px;
 }
 
-main h1:hover {
+main section h1:hover {
     color: hsl(178, 100%, 50%);
     cursor: pointer;
 }
 
-section .priceInfo {
-    width: 100%;
-    /* background-color: rgb(126, 181, 185); */
+main section>p {
+    line-height: 1.5em;
 }
 
-section .price {
+main section .priceInfo {
+    width: 100%;
+}
+
+main section .price {
     color: hsl(178, 100%, 50%);
     font-weight: 600;
     display: inline-block;
     width: 49%;
     box-sizing: border-box;
+    margin-top: 5px;
 }
 
-section .price img {
-    padding-right: 15px;
+main section .price>img {
+    padding-right: 5px;
+    position: relative;
+    top: 2px;
 }
 
-section .priceInfo p:nth-child(2) {
-    /* background-color: rgb(126, 181, 185); */
+main section .priceInfo .timeInfo {
     display: inline-block;
     text-align: right;
     width: 49%;
     box-sizing: border-box;
+    line-height: 1em;
+    font-size: 16px;
+    margin-top: 5px;
 }
 
-section .priceInfo p img {
-    padding-right: 15px;
+main section .timeInfo>img {
+    padding-right: 7px;
+    position: relative;
+    top: 2px;
 }
 
-section .artist {
+main section .artist {
     border-top: 1px hsl(215, 32%, 27%) solid;
-    padding-top: 15px;
+    padding-top: 10px;
+    margin-top: 5px;
+    font-size: 16px;
 }
 
-section .artist a {
+main section .artist>img {
+    height: 32px;
+    position: relative;
+    top: 10px;
+    border: 1px white solid;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+main section .artist a {
     text-decoration: none;
     color: white;
 }
 
-section .artist a:hover {
+main section .artist a:hover {
     color: hsl(178, 100%, 50%);
 }
