@@ -15,7 +15,7 @@ body {
     height: 100vh;
 
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
